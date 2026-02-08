@@ -9,6 +9,7 @@ Unlike a simple frontend-only calculator, this project uses a **backend API** to
 - Advanced operations like Square Root (√) and Percentage (%)
 
 This project is developed as part of the **Unified Mentor Assignment** to demonstrate frontend–backend integration, error handling, and professional project structure.
+The frontend UI now includes a **dribbble-inspired pink theme** with a centered **"Basic Calculator"** title, rounded display, and circular button styling.
 
 ---
 
@@ -84,15 +85,18 @@ Basic-Calculator/
 ```bash
 git clone <your-github-repo-link>
 cd Basic-Calculator
+```
 
-2️⃣ Start Backend Server
+### 2️⃣ Start Backend Server
+```bash
 cd server
 npm install
 node server.js
+```
 Server runs on:
 
 http://localhost:5001
 
-3️⃣ Open Frontend
+### 3️⃣ Open Frontend
 
 Open client/index.html in your browser.
