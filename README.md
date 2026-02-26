@@ -35,6 +35,31 @@ The frontend UI now includes a **dribbble-inspired pink theme** with a centered 
 
 ---
 
+## 📸 Feature Screenshots
+
+### Home Screen
+![Home Screen](client/assets/screenshots/01-home.png)
+
+### Basic Calculation (7 + 8 = 15)
+![Basic Addition](client/assets/screenshots/02-basic-addition.png)
+
+### Square Root (√81 = 9)
+![Square Root](client/assets/screenshots/03-square-root.png)
+
+### Percentage (45% = 0.45)
+![Percentage](client/assets/screenshots/04-percentage.png)
+
+### Memory Add + Recall (M+ then MR)
+![Memory Add Recall](client/assets/screenshots/05-memory-add-recall.png)
+
+### Memory Subtract (M- then MR)
+![Memory Subtract](client/assets/screenshots/06-memory-subtract.png)
+
+### Memory Clear (MC then MR = 0)
+![Memory Clear](client/assets/screenshots/07-memory-clear.png)
+
+---
+
 ## ⌨️ Keyboard Shortcuts
 | Key | Action |
 |----|-------|
@@ -43,8 +68,10 @@ The frontend UI now includes a **dribbble-inspired pink theme** with a centered 
 | Enter | Equals (=) |
 | Backspace | Delete |
 | C | Clear |
-| M | Memory Recall (MR) |
-| Shift + M | Memory Clear (MC) |
+| Ctrl + M | Memory Add (M+) |
+| Ctrl + N | Memory Subtract (M-) |
+| Ctrl + R | Memory Recall (MR) |
+| Ctrl + C | Memory Clear (MC) |
 
 ---
 

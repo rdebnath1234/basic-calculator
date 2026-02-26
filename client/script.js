@@ -82,7 +82,7 @@ async function memoryRecall() {
 }
 
 async function memoryClear() {
-  await fetch('http://localhost:5000/memory/clear', { method: 'POST' });
+  await fetch('http://localhost:5001/memory/clear', { method: 'POST' });
   display.value = '';
 }
 
