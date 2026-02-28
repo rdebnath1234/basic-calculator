@@ -98,6 +98,8 @@ Basic-Calculator/
 │ ├── style.css
 │ └── script.js
 │
+├── package.json
+│
 ├── server/
 │ ├── server.js
 │ └── package.json
@@ -114,20 +116,47 @@ git clone <your-github-repo-link>
 cd Basic-Calculator
 ```
 
-### 2️⃣ Start Backend Server
+### 2️⃣ Install Dependencies
 ```bash
-cd server
 npm install
+```
+
+### 3️⃣ Start the App
+```bash
 npm start
 ```
 Server runs on:
 
 http://localhost:5001
 
-### 3️⃣ Open the App
+### 4️⃣ Open the App
 
 Open the calculator in your browser at:
 
 http://localhost:5001
 
 The Express server now serves both the frontend files and the calculator API, so you do not need to open `client/index.html` directly.
+
+---
+
+## 🚆 Deploy on Railway (GitHub)
+
+This repository is configured for Railway deployment from the **repository root**.
+
+### 1️⃣ Push the latest code to GitHub
+```bash
+git add .
+git commit -m "Update project"
+git push origin main
+```
+
+### 2️⃣ Create a Railway project from GitHub
+- Open the Railway dashboard
+- Click **New Project**
+- Choose **Deploy from GitHub Repo**
+- Select this repository
+- Keep the source set to the repository root
+
+### 3️⃣ Automatic deploys
+
+Once the repository is connected, Railway will automatically build and deploy new commits pushed to the connected branch.
