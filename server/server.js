@@ -123,6 +123,8 @@ app.get('/', (_req, res) => {
 });
 
 // =====================
-app.listen(5001, () => {
-  console.log('Server running on http://localhost:5001');
+const port = Number(process.env.PORT) || 5001;
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });

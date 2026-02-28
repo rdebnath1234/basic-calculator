@@ -1,0 +1,8 @@
+{
+  "name": "basic-calculator",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix server",
+    "start": "npm --prefix server start"
+  }
+}
