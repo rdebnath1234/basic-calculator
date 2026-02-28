@@ -10,6 +10,10 @@ const clientDir = path.join(__dirname, '..', 'client');
 
 app.use(express.static(clientDir));
 
+app.get('/favicon.ico', (_req, res) => {
+  res.sendFile(path.join(clientDir, 'favicon.svg'));
+});
+
 // =====================
 // SERVER-SIDE MEMORY
 // =====================

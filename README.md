@@ -118,12 +118,16 @@ cd Basic-Calculator
 ```bash
 cd server
 npm install
-node server.js
+npm start
 ```
 Server runs on:
 
 http://localhost:5001
 
-### 3️⃣ Open Frontend
+### 3️⃣ Open the App
 
-Open client/index.html in your browser.
+Open the calculator in your browser at:
+
+http://localhost:5001
+
+The Express server now serves both the frontend files and the calculator API, so you do not need to open `client/index.html` directly.
