@@ -13,7 +13,7 @@ function clearDisplay() {
 // BASIC CALCULATION
 async function calculate() {
   try {
-    const res = await fetch('http://localhost:5001/calculate', {
+    const res = await fetch('/calculate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ expression: display.value })
@@ -29,7 +29,7 @@ async function calculate() {
 // SQRT
 async function squareRoot() {
   try {
-    const res = await fetch('http://localhost:5001/sqrt', {
+    const res = await fetch('/sqrt', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ value: Number(display.value) })
@@ -45,7 +45,7 @@ async function squareRoot() {
 // PERCENTAGE
 async function percentage() {
   try {
-    const res = await fetch('http://localhost:5001/percentage', {
+    const res = await fetch('/percentage', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ value: Number(display.value) })
@@ -60,7 +60,7 @@ async function percentage() {
 // --------------------
 // MEMORY
 async function memoryAdd() {
-  await fetch('http://localhost:5001/memory/add', {
+  await fetch('/memory/add', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ value: Number(display.value) })
@@ -68,7 +68,7 @@ async function memoryAdd() {
 }
 
 async function memorySub() {
-  await fetch('http://localhost:5001/memory/sub', {
+  await fetch('/memory/sub', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ value: Number(display.value) })
@@ -76,13 +76,13 @@ async function memorySub() {
 }
 
 async function memoryRecall() {
-  const res = await fetch('http://localhost:5001/memory/recall');
+  const res = await fetch('/memory/recall');
   const data = await res.json();
   display.value = data.memory;
 }
 
 async function memoryClear() {
-  await fetch('http://localhost:5001/memory/clear', { method: 'POST' });
+  await fetch('/memory/clear', { method: 'POST' });
   display.value = '';
 }
 

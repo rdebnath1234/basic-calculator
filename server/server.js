@@ -1,9 +1,14 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const clientDir = path.join(__dirname, '..', 'client');
+
+app.use(express.static(clientDir));
 
 // =====================
 // SERVER-SIDE MEMORY
@@ -106,6 +111,11 @@ app.get('/memory/recall', (req, res) => {
 app.post('/memory/clear', (req, res) => {
   memory = 0;
   res.json({ memory });
+});
+
+// =====================
+app.get('/', (_req, res) => {
+  res.sendFile(path.join(clientDir, 'index.html'));
 });
 
 // =====================
