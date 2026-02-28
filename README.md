@@ -143,6 +143,12 @@ The Express server now serves both the frontend files and the calculator API, so
 
 This repository is configured for Railway deployment from the **repository root**.
 
+### Live Railway Project
+
+Open the connected Railway project here:
+
+[Basic Calculator on Railway](https://railway.com/project/334a68ba-d373-4f0c-accc-bd1269e2b24c?environmentId=ffe6312e-68bf-4438-af54-2ceca753fbd5)
+
 ### 1️⃣ Push the latest code to GitHub
 ```bash
 git add .
